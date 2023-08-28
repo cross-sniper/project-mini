@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Idle Game</title>
+    <style>
+
+
+/* Reset default margins and paddings */
+body, h1, h2, h3, h4, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+#container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#player-info {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#player-info span {
+    font-weight: bold;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#crafting-list-container {
+    margin-top: 20px;
+}
+
+#crafting-list li {
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+
+#refining-buttons,
+#mine-buttons {
+    margin-top: 20px;
+}
+
+#resources-list li {
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+
+/* Styling for resource icons (assuming you have icons) */
+.resource-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+/* Optional: Styling for buttons added dynamically */
+.dynamic-button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.dynamic-button:hover {
+    background-color: #1f9032;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <div>
+            <p>Resources:</p>
+            <ul id="resources-list"></ul>
+          </div>
+          <br>
+          <div id="player-info">
+              Cash: <span id="cash-value">0</span><br>
+              C Power: <span id="cpower-value">1</span><br>
+              C Power Cost: <span id="cpower-cost">200</span><br>
+              U Power: <span id="upower-value">1</span><br>
+              U Power Cost: <span id="upower-cost">200</span>
+              <button onclick="sellAll()">sell all</button>
+              <button onclick="upgrade('Upower')">upgrade Upower</button>
+              <button onclick="upgrade('Cpower')">upgrade Cpower</button>
+              <button onclick="melt()">refine all</button>
+
+              
+              
+            </div>
+            
+          <div id="crafting-list-container">
+            <p>Crafting:</p>
+            <ul id="crafting-list"></ul>
+          </div>
+          <div id="refining-buttons">
+          </div>
+          <br>
+          <div id="mine-buttons">
+              <!-- Buttons will be dynamically added here -->
+          </div>
+    </div>
+    <script src="index.js">
+
+    </script>
+</body>
+</html>

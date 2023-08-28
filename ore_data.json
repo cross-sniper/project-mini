@@ -1,0 +1,178 @@
+{
+    "iron": {
+        "name": "iron",
+        "desc": "A refined iron ingot, ready for crafting.",
+        "value": 25,
+        "time": 4,
+        "ore": false,
+        "heat": true,
+        "heatNum": 1.0,
+        "makes": [
+            
+        ],
+        "needs": [
+            "ironOre"
+        ]
+    },
+    "ironOre": {
+        "name": "Iron Ore",
+        "desc": "Raw iron ore extracted from mines.",
+        "value": 5,
+        "time": 3,
+        "ore": true,
+        "heat": false,
+        "makes": [
+            "iron"
+        ],
+        "needs": []
+    },
+    "copperOre": {
+        "name": "copper ore",
+        "desc": "copper ore",
+        "value": 10,
+        "ore":true,
+        "time": 2,
+        "heat": true,
+        "heatNum": 0.5,
+        "makes": [
+            "copper"
+        ],
+        "needs":[
+            
+        ]
+    },
+    "goldOre": {
+        "name": "gold ore",
+        "desc": "raw gold ore, ready for refining.",
+        "value": 15,
+        "time": 3,
+        "ore": true,
+        "heat": false,
+        "makes": ["gold"],
+        "needs": []
+    },
+    "glass": {
+        "name": "glass",
+        "desc": "transparent material made from melted sand.",
+        "value": 8,
+        "time": 2,
+        "ore": false,
+        "heat": true,
+        "heatNum": 0.7,
+        "makes": [],
+        "needs": ["sand"]
+    },"sand": {
+        "name": "sand",
+        "desc": "grains of sand, suitable for glassmaking.",
+        "value": 3,
+        "time": 1,
+        "ore": true,
+        "heat": false,
+        "makes": ["glass"],
+        "needs": []
+    },"diamond": {
+        "name": "diamond",
+        "desc": "precious gemstone, sparkling and rare.",
+        "value": 200,
+        "time": 10,
+        "ore": false,
+        "heat": false,
+        "heatNum": 0,
+        "makes": [],
+        "needs": ["diamondOre"]
+    },
+    "water":{
+        "name":"water",
+        "desc":"water, can be used to cool down things",
+        "value":5,
+        "time":0.5,
+        "ore":true,
+        "heat":true,
+        "heatNum":-2,
+        "makes":[],
+        "needs":[]
+    },"diamondOre": {
+        "name": "diamond ore",
+        "desc": "rough diamond ore, ready for extraction.",
+        "value": 50,
+        "time": 8,
+        "ore": true,
+        "heat": false,
+        "makes": ["diamond"],
+        "needs": []
+    },"rubber": {
+        "name": "rubber",
+        "desc": "elastic material derived from rubber plants.",
+        "value": 12,
+        "time": 3,
+        "ore": false,
+        "heat": false,
+        "heatNum": 0,
+        "makes": [],
+        "needs": ["rubberPlant"]
+    },"rubberPlant": {
+        "name": "rubberPlant",
+        "desc": "plant that yields rubber sap.",
+        "value": 7,
+        "time": 4,
+        "ore": false,
+        "heat": false,
+        "heatNum": 0,
+        "makes": ["rubber"],
+        "needs": ["water"]
+    },
+    "copper": {
+        "name": "copper",
+        "desc": "shiny copper",
+        "value": 15,
+        "time": 5,
+        "ore":false,
+        "heat": false,
+        "heatNum": 0,
+        "makes": ["wire"],
+        "needs":[
+            "copperOre"
+        ]
+    },
+    "wire": {
+        "name": "wire",
+        "desc": "electric wire",
+        "value": 20,
+        "time": 2,
+        "ore":false,
+        "heat": false,
+        "heatNum": 0,
+        "makes": [],
+        "needs":["copper"]
+    },
+    "steel":{
+        "name":"steel",
+        "desc":"A sturdy alloy of iron and carbon.",
+        "value":25,
+        "time":4,
+        "ore":false,
+        "heat":true,
+        "heatNum":1.5,
+        "makes":[
+        ],
+        "needs":[
+            "iron",
+            "coal"
+        ]
+    },
+    "coal":{
+        "name":"Coal",
+        "desc":"Fossil fuel used as a heat source.",
+        "value":6,
+        "time":1,
+        "ore":true,
+        "heat":true,
+        "heatNum":0.8,
+        "makes":[
+            "steel"
+        ],
+        "needs":[
+            
+        ]
+    }
+}

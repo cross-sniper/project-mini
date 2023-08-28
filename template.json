@@ -1,0 +1,17 @@
+{
+    "iron":{
+        "name":"iron",
+        "desc":"your standart iron",
+        "value":10,//quantity of cash made when sold
+        "time":2,//time that takes to mine/melt/process this
+        "ore":false,//indicates if this is a ore or not
+        "heat":true,//this is a flag that says "generate heat if true, else, do nothing"
+        "heatNum":0.5,//quantity of heat generated
+        "makes":[//what this can make, usefull for some other things, and it needs to be defined in the file
+            
+        ],
+        "needs":[//what this needs to be made(it must be definined, in the file, and in the item's "makes" section)
+
+        ]
+    }
+}
